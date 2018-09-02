@@ -63,6 +63,11 @@ if __name__ == '__main__':
 
     print('Correlation interval: {}'.format(interval))
 
+    print('Corr.f., ncf - first 10 values')
+    for n in range(11):
+        print(n, ' & ', round(cf(n), 5), '& ', round(ncf(n), 5), '     \\\\ \\hline')
+
+    print('Corr.f, Norm.c.f in interval')
     for n in range(interval + 1):
         print(round(cf(n), 5), round(ncf(n), 5))
 
