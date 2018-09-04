@@ -4,8 +4,7 @@ from correlation import *
 
 def solve(a, b):
     """
-        Solves A * x = b
-        Raises an exception if no solution was found.
+        Solves the linear system A * x = b
     """
     a = np.matrix(a)
     b = np.array(b)
@@ -20,8 +19,7 @@ def solve(a, b):
 
 def make_walker_matrix(corr, n):
     """
-        Returns matrix for Yule-Walker equations.
-        A in: A * x = b
+        Returns matrix A for Yule-Walker system of range n
     """
     R = np.zeros((n, n))
 
@@ -34,8 +32,7 @@ def make_walker_matrix(corr, n):
 
 def make_walker_vector(corr, n):
     """
-        Returns vector for Yule-Walker equations.
-        b in: A * x = b
+        Returns vector b for Yule-Walker system of range n
     """
     R = np.zeros((n, 1))
 
@@ -46,6 +43,9 @@ def make_walker_vector(corr, n):
 
 
 def calc_model_ar(n, data):
+    """
+        Calculates the autoregression model of range n with Yule-Walker equations
+    """
     data = np.array(data)
 
     corr = corr_func(data)
@@ -61,24 +61,27 @@ def calc_model_ar(n, data):
     tmp = corr(0) - betas.dot(b)
 
     if tmp < 0:
-        raise ArithmeticError('No solution for ar({})'.format(n))
+        raise ArithmeticError('No solution for model ar({})'.format(n))
 
     alpha = np.sqrt(corr(0) - betas.dot(b))
 
+    """
+        Checks the stability conditions for a given model
+    """
     if n == 1:
         if abs(betas[0]) >= 1:
-            raise ArithmeticError('Model is unstable ar(1)')
+            raise ArithmeticError('Model ar(1) is unstable')
 
     if n == 2:
         if abs(betas[1]) >= 1 \
                 or abs(betas[0]) >= 1 - betas[1]:
-            raise ArithmeticError('Model is unstable ar(2)')
+            raise ArithmeticError('Model ar(2) is unstable')
 
     if n == 3:
         if abs(betas[2]) >= 1 \
                 or abs(betas[0] + betas[2]) >= 1 - betas[1] \
                 or abs(betas[1] + betas[0] * betas[2]) >= abs(1 - betas[2]**2):
-            raise ArithmeticError('Model is unstable ar(3)')
+            raise ArithmeticError('Model ar(3) is unstable')
 
     return np.append(alpha, betas)
 
