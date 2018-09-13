@@ -97,7 +97,7 @@ if __name__ == '__main__':
                interval],
               ['Source',
                r'$\pm e^{-1}$',
-               'Interval of correlation'],
+               'Correlation interval'],
               loc='upper center',
               bbox_to_anchor=(0.5,
                               -0.13),
