@@ -16,21 +16,21 @@ if __name__ == '__main__':
     std = data.std()
 
     print('Mean: {}'.format(mean))
-    print('Disp.: {}'.format(std ** 2))
+    print('Dispersion.: {}'.format(std ** 2))
     print('STD: {}'.format(std))
 
-    x = range(0, 121)
-    y = data[0:121]
+    x = range(0, 151)
+    y = data[0:151]
 
     fig = plt.figure()
     ax = plt.subplot(111)
 
     plt.rc('lines', linewidth=1)
 
-    source, = ax.plot(x, y, 'black')
-    avg, = ax.plot([0, 120], [mean] * 2, 'red')
-    mn, = ax.plot([0, 120], [mean + std] * 2, 'blue')
-    mn, = ax.plot([0, 120], [mean - std] * 2, 'blue')
+    source, = ax.plot(x, y, 'gray')
+    avg, = ax.plot([0, 151], [mean] * 2, 'red')
+    mn, = ax.plot([0, 151], [mean + std] * 2, 'blue')
+    mn, = ax.plot([0, 151], [mean - std] * 2, 'blue')
 
     plt.xlabel('Index number')
     plt.ylabel('Random sequence values')
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     ax.set_position([box.x0, box.y0 + box.height * 0.1,
                      box.width, box.height * 0.9])
 
-    ax.legend([source, avg, mn], ['Source process', 'Average', 'Standart deviation'],
+    ax.legend([source, avg, mn], ['Source process', 'Average', 'Standard deviation'],
               loc='upper center', bbox_to_anchor=(0.5, -0.13), ncol=3, fancybox=True)
 
     plt.grid(True)
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     x = range(interval + 20)
     y = list(map(ncf, x))
 
-    source, = ax.plot(x, y, 'black')
+    source, = ax.plot(x, y, 'gray')
     cnst_plt, = ax.plot([min(x), max(x)], [cnst] * 2, 'blue')
     cnst_plt, = ax.plot([min(x), max(x)], [-cnst] * 2, 'blue')
     interval, = ax.plot([interval, interval], [
@@ -339,7 +339,7 @@ if __name__ == '__main__':
     fig = plt.figure()
     ax = plt.subplot(111)
 
-    data_plot, = ax.plot(x, y, 'black')
+    data_plot, = ax.plot(x, y, 'gray')
     mean_plot, = ax.plot([0, 120], [mean, mean], 'blue')
     std_plot, = ax.plot([0, 120], [mean - std, mean - std], 'red')
     _ = ax.plot([0, 120], [mean + std, mean + std], 'red')

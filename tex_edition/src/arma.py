@@ -4,8 +4,7 @@ from moving_average import *
 
 
 def calc_model_arma(m, n, data, eps=1e-5, maxiter=100):
-    """
-    """
+
     data = np.array(data)
 
     matrix = np.zeros((m, m))
@@ -56,8 +55,7 @@ def calc_model_arma(m, n, data, eps=1e-5, maxiter=100):
 
 
 def theory_ncf_arma(m, n, data, eps=1e-5, maxiter=100):
-    """
-    """
+
     from functools import lru_cache
 
     coeffs = calc_model_arma(m, n, data, eps, maxiter)
@@ -84,8 +82,7 @@ def theory_ncf_arma(m, n, data, eps=1e-5, maxiter=100):
 
 
 def model_arma(m, n, data, eps=1e-5, maxiter=100):
-    """
-    """
+
     if m == 0:
         return model_ma(n, data, eps, maxiter)
     if n == 0:

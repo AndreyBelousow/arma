@@ -5,10 +5,18 @@
       <change beforePath="$PROJECT_DIR$/../6309-Белоусов-51.pdf" afterPath="$PROJECT_DIR$/../6309-Белоусов-51.pdf" />
       <change beforePath="$PROJECT_DIR$/../6309-Белоусов-51.synctex.gz" afterPath="$PROJECT_DIR$/../6309-Белоусов-51.synctex.gz" />
       <change beforePath="$PROJECT_DIR$/../6309-Белоусов-51.tex" afterPath="$PROJECT_DIR$/../6309-Белоусов-51.tex" />
+      <change beforePath="$PROJECT_DIR$/../plot1.png" afterPath="$PROJECT_DIR$/../plot1.png" />
       <change beforePath="$PROJECT_DIR$/../plot2.png" afterPath="$PROJECT_DIR$/../plot2.png" />
+      <change beforePath="$PROJECT_DIR$/../plot_arma_modeled.png" afterPath="$PROJECT_DIR$/../plot_arma_modeled.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/arma.py" afterPath="$PROJECT_DIR$/arma.py" />
+      <change beforePath="$PROJECT_DIR$/autoregression.py" afterPath="$PROJECT_DIR$/autoregression.py" />
+      <change beforePath="$PROJECT_DIR$/correlation.py" afterPath="$PROJECT_DIR$/correlation.py" />
       <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="$PROJECT_DIR$/moving_average.py" afterPath="$PROJECT_DIR$/moving_average.py" />
+      <change beforePath="$PROJECT_DIR$/plot1.png" afterPath="$PROJECT_DIR$/plot1.png" />
       <change beforePath="$PROJECT_DIR$/plot2.png" afterPath="$PROJECT_DIR$/plot2.png" />
+      <change beforePath="$PROJECT_DIR$/plot_arma_modeled.png" afterPath="$PROJECT_DIR$/plot_arma_modeled.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,8 +71,8 @@
       <file leaf-file-name="arma.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="717">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,8 +81,8 @@
       <file leaf-file-name="correlation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/correlation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state relative-caret-position="115">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -85,8 +93,8 @@
       <file leaf-file-name="autoregression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoregression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="1334">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -97,8 +105,8 @@
       <file leaf-file-name="moving_average.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moving_average.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5037">
-              <caret line="220" column="4" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+            <state relative-caret-position="970">
+              <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -109,8 +117,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+            <state relative-caret-position="69">
+              <caret line="342" column="56" lean-forward="true" selection-start-line="342" selection-start-column="56" selection-end-line="342" selection-end-column="56" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -131,16 +139,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/moving_average.py" />
         <option value="$PROJECT_DIR$/autoregression.py" />
+        <option value="$PROJECT_DIR$/correlation.py" />
+        <option value="$PROJECT_DIR$/arma.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2492" />
-    <option name="y" value="-17" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,7 +240,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -259,6 +270,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/arma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/correlation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoregression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moving_average.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5037">
+          <caret line="220" column="4" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/arma.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
@@ -414,10 +473,10 @@
     <entry file="file://$USER_HOME$/Anaconda35/envs/py36/Lib/site-packages/matplotlib/__init__.py" />
     <entry file="file://$USER_HOME$/Anaconda35/envs/py36/Lib/site-packages/matplotlib/figure.py" />
     <entry file="file://$USER_HOME$/Anaconda35/envs/py36/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$PROJECT_DIR$/correlation.py">
+    <entry file="file://$PROJECT_DIR$/moving_average.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        <state relative-caret-position="970">
+          <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -426,18 +485,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/autoregression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="1334">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moving_average.py">
+    <entry file="file://$PROJECT_DIR$/correlation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5037">
-          <caret line="220" column="4" lean-forward="false" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -446,16 +505,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/arma.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        <state relative-caret-position="717">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        <state relative-caret-position="69">
+          <caret line="342" column="56" lean-forward="true" selection-start-line="342" selection-start-column="56" selection-end-line="342" selection-end-column="56" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

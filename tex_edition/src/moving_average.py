@@ -195,12 +195,7 @@ def theory_ncf_ma2(data):
 
 
 def model_ma2(data, eps=1e-5, maxiter=100):
-    """
-        x(t) = a_0 * w(t) + a_1 * w(t - 1) + a_2 * w(t - 2)
 
-        w - white noise
-        a - coeffs. from calc_model_ma2
-    """
     a = calc_model_ma2(data, eps, maxiter)
 
     def get_model(x0):
@@ -219,21 +214,7 @@ def model_ma2(data, eps=1e-5, maxiter=100):
 
 
 def calc_model_ma3(data, eps=1e-5, maxiter=100):
-    """
-        R(0) = a_0**2 + a_1**2 + a_2**2 + a_3**2
-        R(1) = a_0 * a_1 + a_1 * a_2 + a_2 * a_3
-        R(2) = a_0 * a_2 + a_1 * a_3
-        R(3) = a_0 * a_3
 
-        Iterative solution:
-        a_3 = R(3) / a_0
-        a_2 = (R(2) - a_1 * a_3) / a_0
-        a_1 = (R(1) - a_1 * a_2 - a_2 * a_3) / a_0
-        a_0 = sqrt(R(0) - a_1**2 - a_2**2 - a_3**2) if R(0) >= a_1**2 + a_2**2 + a_3**2
-
-        R - correlation function
-        a_i - model coeffs.
-    """
     data = np.array(data)
 
     R = corr_func(data)
@@ -285,12 +266,7 @@ def theory_ncf_ma3(data):
 
 
 def model_ma3(data, eps=1e-5, maxiter=100):
-    """
-        x(t) = a_0 * w(t) + a_1 * w(t - 1) + a_2 * w(t - 2) + a_3 * w(t - 3)
 
-        w - white noise
-        a - coeffs. from calc_model_ma3
-    """
     a = calc_model_ma3(data, eps, maxiter)
 
     def get_model(x0):
@@ -309,9 +285,7 @@ def model_ma3(data, eps=1e-5, maxiter=100):
 
 
 def calc_model_ma(n, data, eps=1e-5, maxiter=100):
-    """
-        Calculate coeffs. for moving average model (ma(n)).
-    """
+
     if n == 0:
         return calc_model_ma0(data)
     if n == 1:
@@ -325,9 +299,7 @@ def calc_model_ma(n, data, eps=1e-5, maxiter=100):
 
 
 def theory_ncf_ma(n, data):
-    """
-        Theoretical normalized correlation function for moving average model (ma(n)).
-    """
+
     if n == 0:
         return theory_ncf_ma0(data)
     if n == 1:
@@ -341,9 +313,7 @@ def theory_ncf_ma(n, data):
 
 
 def model_ma(n, data, eps=1e-5, maxiter=100):
-    """
-        Model of moving average (ma(n))
-    """
+
     if n == 0:
         return model_ma0(data)
     if n == 1:

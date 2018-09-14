@@ -3,9 +3,7 @@ from correlation import *
 
 
 def solve(a, b):
-    """
-        Solves the linear system A * x = b
-    """
+
     a = np.matrix(a)
     b = np.array(b)
 
@@ -18,9 +16,7 @@ def solve(a, b):
 
 
 def make_walker_matrix(corr, n):
-    """
-        Returns matrix A for Yule-Walker system of range n
-    """
+
     R = np.zeros((n, n))
 
     for i in range(n):
@@ -31,9 +27,7 @@ def make_walker_matrix(corr, n):
 
 
 def make_walker_vector(corr, n):
-    """
-        Returns vector b for Yule-Walker system of range n
-    """
+
     R = np.zeros((n, 1))
 
     for i in range(n):
@@ -43,9 +37,7 @@ def make_walker_vector(corr, n):
 
 
 def calc_model_ar(n, data):
-    """
-        Calculates the autoregression model of range n with Yule-Walker equations
-    """
+
     data = np.array(data)
 
     corr = corr_func(data)
@@ -65,9 +57,6 @@ def calc_model_ar(n, data):
 
     alpha = np.sqrt(corr(0) - betas.dot(b))
 
-    """
-        Checks the stability conditions for a given model
-    """
     if n == 1:
         if abs(betas[0]) >= 1:
             raise ArithmeticError('Model ar(1) is unstable')

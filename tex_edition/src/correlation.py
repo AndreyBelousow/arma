@@ -3,9 +3,7 @@ from functools import lru_cache
 
 
 def corr_func(data):
-    """
-        Calculate correlation function of data
-    """
+
     data = np.array(data)
 
     data = data - data.mean()
@@ -25,9 +23,7 @@ def corr_func(data):
 
 
 def normalized_corr_func(data):
-    """
-        Calculate normalized correlation function of data
-    """
+
     data = np.array(data)
 
     corr = corr_func(data)
