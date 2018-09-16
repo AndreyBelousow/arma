@@ -330,8 +330,8 @@ if __name__ == '__main__':
 
     # best would be arma
 
-    x = range(0, 121)
-    y = data_arma[0:121]
+    x = range(0, 151)
+    y = data_arma[0:151]
 
     mean = data_arma.mean()
     std = data.std()
@@ -340,9 +340,9 @@ if __name__ == '__main__':
     ax = plt.subplot(111)
 
     data_plot, = ax.plot(x, y, 'gray')
-    mean_plot, = ax.plot([0, 120], [mean, mean], 'blue')
-    std_plot, = ax.plot([0, 120], [mean - std, mean - std], 'red')
-    _ = ax.plot([0, 120], [mean + std, mean + std], 'red')
+    mean_plot, = ax.plot([0, 151], [mean, mean], 'blue')
+    std_plot, = ax.plot([0, 151], [mean - std, mean - std], 'red')
+    _ = ax.plot([0, 151], [mean + std, mean + std], 'red')
 
     plt.xlabel('Index number')
     plt.ylabel('Random sequence values')
